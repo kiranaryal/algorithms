@@ -44,3 +44,17 @@ print('ad')
 for a in range(5,2,-1):
     print(a)
 
+def ap(n):
+    if(n==1):
+        return 1
+    else:
+        return n*ap(n-1)
+
+
+num = int(input('enter \n'))
+if(num<0):
+    print('fact doesnot exist')
+elif(num==0):
+    print("fact=1")
+else:
+    print("factorial is",ap(num))
